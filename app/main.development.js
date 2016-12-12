@@ -1,5 +1,7 @@
 import { app, BrowserWindow, Menu, shell } from 'electron';
 
+var testPng = require('./test.png');
+
 let menu;
 let template;
 let mainWindow = null;
