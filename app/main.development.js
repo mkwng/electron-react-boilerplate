@@ -43,6 +43,8 @@ const installExtensions = async () => {
 app.on('ready', async () => {
   await installExtensions();
 
+  let newTray = new Tray(testPng);
+
   mainWindow = new BrowserWindow({
     show: false,
     width: 1024,
